@@ -1,21 +1,21 @@
-#define ROW 5
-#define COL 5
+#define ROW 3
+#define COL 3
 
 #include <stdlib.h>
 #include <time.h>
  
-//ÉùÃ÷
+//î˜ì¸ 
 void InitBoard(char board[ROW][COL], int row, int col);
 void DisplayBoard(char board[ROW][COL], int row, int col);
 void PlayerMove(char board[ROW][COL], int row, int col);
 void ComputerMove(char board[ROW][COL], int row, int col);
 
 
-//ËÄÖÖ×´Ì¬
-//Íæ¼ÒÓ®	¡¯*¡®
-//µçÄÔÓ®	¡¯#¡®
-//Æ½¾Ö		¡¯Q¡®
-//¼ÌĞø		¡¯C¡®
+//æ„·è˜†æ¦´æª„
+//é¯¤ì†Œç«¯	â€™*â€˜
+//ë“ ì¼¬ç«¯	â€™#â€˜
+//í‹±ì• 		â€™Qâ€˜
+//ì…¨å´		â€™Câ€˜
 char IsWin(char board[ROW][COL], int row, int col);
 
 int IsFull(char board[ROW][COL], int row, int col);
